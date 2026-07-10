@@ -1,7 +1,9 @@
 body {
   background-image: url("./Sigma1.png");
-  display: flex;
-  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   padding: 20px;
   gap: 20px;
 }
