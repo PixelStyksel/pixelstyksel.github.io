@@ -1,4 +1,4 @@
-import Lua5_1 from './lua5.1.js';
+import Lua5_1 from './lua5.1.5.js';
 var C = Lua5_1.C;
 
 var L = C.lua_open();
