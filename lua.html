@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Include the Fengari web library -->
+    <script src="https://cloudflare.com" type="text/javascript"></script>
+</head>
+<body>
+
+    <!-- Target element for our Lua script -->
+    <h1 id="output">Waiting for Lua...</h1>
+
+    <!-- Execute Lua code directly in HTML -->
+    <script type="application/lua">
+        local window = js.global
+        local document = window.document
+        
+        -- Manipulate the DOM using Lua
+        local header = document:getElementById("output")
+        header.innerHTML = "Hello from Lua!"
+        
+        print("This prints to the browser developer console!")
+    </script>
+
+</body>
+</html>
